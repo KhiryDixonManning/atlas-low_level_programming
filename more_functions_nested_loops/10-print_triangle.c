@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+int main(void)
+{
+int p;
 
 int triangle(int rows){
 
@@ -23,7 +26,6 @@ int triangle(int rows){
 }
 }
 
-int main()
 {
     triangle(5);
     return 0;
