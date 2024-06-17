@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * _strdup - duplicate a string
@@ -19,11 +18,13 @@ char *_strdup(char *str)
         return (NULL);
     }
 
+    // Calculate the length of the input string
     while (str[len] != '\0')
     {
         len++;
     }
 
+    // Allocate memory for the duplicate string
     dup = malloc(len + 1);
 
     if (dup == NULL)
@@ -31,6 +32,7 @@ char *_strdup(char *str)
         return (NULL);
     }
 
+    // Copy the string into the newly allocated memory
     for (size_t i = 0; i <= len; i++)
     {
         dup[i] = str[i];
